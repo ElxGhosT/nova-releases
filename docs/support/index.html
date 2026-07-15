@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Installer Nova Support</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body><main>
+  <h1>Nova Support</h1>
+  <p>Application destinée au téléphone-support. Après installation, la caméra reste inaccessible depuis Internet et fonctionne seulement sur le réseau local appairé.</p>
+  <section class="card">
+    <h2 id="version">Lecture de la version…</h2>
+    <ul id="notes"></ul>
+    <a class="button" id="download" href="../Nova-Support-latest.apk">Télécharger et installer</a>
+    <a class="button secondary" href="../SHA256SUMS.txt">Voir les empreintes SHA-256</a>
+  </section>
+  <p class="status">Android peut demander d’autoriser les installations provenant du navigateur utilisé.</p>
+</main>
+<script>
+fetch('../nova-support.json', {cache:'no-store'}).then(r=>r.json()).then(data=>{
+  document.getElementById('version').textContent=`Version ${data.versionName} (${data.versionCode})`;
+  document.getElementById('download').href=data.apkUrl;
+  (data.releaseNotes || []).forEach(n=>{const li=document.createElement('li');li.textContent=n;document.getElementById('notes').appendChild(li);});
+});
+</script>
+</body></html>
