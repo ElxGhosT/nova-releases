@@ -1,1 +1,41 @@
-<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Nova</title><body><h1>Nova Releases</h1><p>La première publication GitHub Actions remplacera cette page.</p></body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nova — versions Android</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body><main>
+  <h1>Nova</h1>
+  <p>Distribution officielle des APK signés Nova. Cette page ne donne aucun accès aux caméras ou aux médias.</p>
+  <section class="card">
+    <h2>Nova</h2>
+    <p id="nova-version">Lecture de la version…</p>
+    <ul id="nova-notes"></ul>
+    <a class="button" id="nova-download" href="Nova-latest.apk">Télécharger Nova</a>
+  </section>
+  <section class="card">
+    <h2>Nova Support</h2>
+    <p id="support-version">Lecture de la version…</p>
+    <ul id="support-notes"></ul>
+    <a class="button" href="support/">Ouvrir la page Nova Support</a>
+  </section>
+  <p class="status">Après téléchargement, Android demande une confirmation d’installation. Les flux caméra restent exclusivement locaux.</p>
+</main>
+<script>
+async function load(id, file, button, notes) {
+  const data = await (await fetch(file, {cache:'no-store'})).json();
+  document.getElementById(id).textContent = `Version ${data.versionName} (${data.versionCode})`;
+  document.getElementById(button).href = data.apkUrl;
+  const ul = document.getElementById(notes);
+  (data.releaseNotes || []).forEach(n => { const li=document.createElement('li'); li.textContent=n; ul.appendChild(li); });
+}
+load('nova-version','nova.json','nova-download','nova-notes');
+fetch('nova-support.json', {cache:'no-store'}).then(r=>r.json()).then(data=>{
+  document.getElementById('support-version').textContent=`Version ${data.versionName} (${data.versionCode})`;
+  const ul=document.getElementById('support-notes');
+  (data.releaseNotes || []).forEach(n=>{const li=document.createElement('li');li.textContent=n;ul.appendChild(li);});
+});
+</script>
+</body></html>

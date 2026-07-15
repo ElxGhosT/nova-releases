@@ -1,0 +1,2 @@
+01cf797fe4d3c40a0ea09a3f512e30c6d24e260d600c51e71eaacd89d36f95d8  Nova-latest.apk
+e531a85e53a4414eacf4967e696df8a60596e2c6e842defc29b477a5f8dc2eab  Nova-Support-latest.apk

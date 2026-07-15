@@ -1,0 +1,13 @@
+{
+  "packageName": "fr.doudou.novasupport",
+  "versionCode": 3,
+  "versionName": "0.3.0",
+  "apkUrl": "https://ElxGhosT.github.io/nova-releases/Nova-Support-latest.apk",
+  "sha256": "e531a85e53a4414eacf4967e696df8a60596e2c6e842defc29b477a5f8dc2eab",
+  "certificateSha256": "3a9424a3874936703820f9f9541d728fd56b5fe33b816918d71066805805fbe2",
+  "mandatory": false,
+  "pageUrl": "https://ElxGhosT.github.io/nova-releases/support/",
+  "releaseNotes": [
+    "Nouvelle version Nova"
+  ]
+}
