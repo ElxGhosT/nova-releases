@@ -1,9 +1,9 @@
 {
   "packageName": "fr.doudou.novasupport",
-  "versionCode": 8,
-  "versionName": "0.5.3",
+  "versionCode": 9,
+  "versionName": "0.6.0",
   "apkUrl": "https://ElxGhosT.github.io/nova-releases/Nova-Support-latest.apk",
-  "sha256": "01dbbd6c164533c8b5f1a1ab63d3c4d709d1334117022971a653e577e4f3f946",
+  "sha256": "fd6fddf7ee0d8b42817cea3132bbdfc58f6be028ba78ce9017d49ce2985085cb",
   "certificateSha256": "3a9424a3874936703820f9f9541d728fd56b5fe33b816918d71066805805fbe2",
   "mandatory": false,
   "pageUrl": "https://ElxGhosT.github.io/nova-releases/support/",
