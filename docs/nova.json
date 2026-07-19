@@ -1,9 +1,9 @@
 {
   "packageName": "fr.doudou.nova",
-  "versionCode": 49,
-  "versionName": "0.10.8",
+  "versionCode": 50,
+  "versionName": "0.11.0",
   "apkUrl": "https://ElxGhosT.github.io/nova-releases/Nova-latest.apk",
-  "sha256": "698378a944e792d2406606751387bac2b73282474e9d00ade07737156fa91fba",
+  "sha256": "eb83fe0688a2507445586b0c1cd9bba65f1d0d5b13aa071a246346ef1f08a758",
   "certificateSha256": "3a9424a3874936703820f9f9541d728fd56b5fe33b816918d71066805805fbe2",
   "mandatory": false,
   "pageUrl": "https://ElxGhosT.github.io/nova-releases/",
