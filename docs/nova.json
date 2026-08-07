@@ -1,13 +1,13 @@
 {
   "packageName": "fr.doudou.nova",
-  "versionCode": 28,
-  "versionName": "0.9.9",
+  "versionCode": 60,
+  "versionName": "0.15.0",
   "apkUrl": "https://ElxGhosT.github.io/nova-releases/Nova-latest.apk",
-  "sha256": "9e6357bbfc67f9883afba410bf60f74c4802475323356d4efa85faee9b7e389c",
+  "sha256": "e36c3561b5fdd2860f70c7daaef04eaff6d84577ca2c2271ade2524f90ced429",
   "certificateSha256": "3a9424a3874936703820f9f9541d728fd56b5fe33b816918d71066805805fbe2",
   "mandatory": false,
   "pageUrl": "https://ElxGhosT.github.io/nova-releases/",
   "releaseNotes": [
-    "Nouvelle version Nova"
+    "Nova 0.15.0 — sécurité intelligente des captures et double aperçu interactif"
   ]
 }
